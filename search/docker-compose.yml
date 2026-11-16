@@ -1,0 +1,29 @@
+# Local SearXNG for the dsh-llm-third-party-native search provider.
+#
+# Started by the plugin when `searchAutoStart` is on and the endpoint is unreachable, or by hand:
+#   docker compose -f ~/Projects/dsh-llm-third-party-native/search/docker-compose.yml up -d
+#
+# Bound to loopback only: search traffic never leaves this machine except as the outbound requests
+# SearXNG itself makes to the engines it aggregates.
+services:
+  searxng:
+    image: docker.io/searxng/searxng:latest
+    container_name: dsh-searxng
+    restart: "no"
+    ports:
+      - "127.0.0.1:${SEARXNG_PORT:-8080}:8080"
+    volumes:
+      - ./settings.yml:/etc/searxng/settings.yml:ro
+    environment:
+      - SEARXNG_BASE_URL=http://127.0.0.1:${SEARXNG_PORT:-8080}/
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - SETGID
+      - SETUID
+    logging:
+      driver: json-file
+      options:
+        max-size: "1m"
+        max-file: "1"

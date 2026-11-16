@@ -1,0 +1,25 @@
+# SearXNG configuration for the local search backend.
+#
+# Two settings differ from the image default and both are required:
+#   - `json` in `search.formats`: the JSON API is off by default, and the provider calls it.
+#   - `limiter: false`: the bot limiter rejects the provider's requests as automated traffic.
+#
+# The rest is a minimal configuration: the default engine set is enabled, with no UI tuning.
+use_default_settings: true
+
+general:
+  instance_name: "DSH local search"
+
+server:
+  secret_key: "dsh-local-search-only-not-a-security-boundary"
+  limiter: false
+  image_proxy: false
+  bind_address: "0.0.0.0"
+  port: 8080
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  formats:
+    - html
+    - json
