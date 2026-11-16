@@ -1,6 +1,6 @@
 {
   "meta": {
     "title": "Third-party DeepSeek",
-    "description": "Runs the built-in DeepSeek route against any Anthropic-compatible Messages endpoint, and adds an editable deployment persona suffix."
+    "description": "Runs custom Anthropic-compatible Messages endpoints through DeepSeek's native adapter alongside the official route, with wire fixes, a persona suffix, and local SearXNG search."
   }
 }

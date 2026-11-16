@@ -274,6 +274,7 @@ export function apply(ctx, config) {
       title: 'Local search (SearXNG)',
       description: {
         en: 'Searches a local SearXNG instance. Traffic stays on this machine; no API key or model turn.',
+        zh: '通过本地 SearXNG 实例搜索，本机回环通信，无需 API 密钥或额外模型轮次。',
       },
       available: () => true,
       search: async (request, signal) => {

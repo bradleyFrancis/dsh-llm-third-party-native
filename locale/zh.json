@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "第三方 DeepSeek",
+    "description": "通过 DeepSeek 原生适配器接入任意兼容 Anthropic Messages 的第三方端点（与官方路由共存），提供协议修复、人设后缀及本地 SearXNG 搜索。"
+  }
+}
