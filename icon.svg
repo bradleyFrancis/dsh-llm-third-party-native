@@ -1,0 +1,16 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Third-party DeepSeek">
+  <defs>
+    <linearGradient id="tpds_a" x1="0" y1="0" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(251, 93%, 61%)"/>
+      <stop offset="1" stop-color="hsl(279, 90%, 43%)"/>
+    </linearGradient>
+    <linearGradient id="tpds_b" x1="36" y1="0" x2="0" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(11, 78%, 63%)"/>
+      <stop offset="1" stop-color="hsl(36, 85%, 44%)"/>
+    </linearGradient>
+  </defs>
+  <rect x="5.0" y="10.0" width="9.7" height="18.2" rx="3" fill="url(#tpds_a)" fill-opacity="0.88"/>
+  <path d="M10.8 19.1H19.1" stroke="url(#tpds_a)" stroke-width="3.3" stroke-linecap="round"/>
+  <rect x="17.1" y="10.4" width="14.1" height="14.1" rx="3" fill="url(#tpds_b)" fill-opacity="0.9"/>
+  <circle cx="24.2" cy="17.4" r="2.7" fill="#FFFFFF"/>
+</svg>

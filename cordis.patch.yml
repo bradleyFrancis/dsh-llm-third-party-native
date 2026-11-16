@@ -1,0 +1,7 @@
+# The row this bundle adds. No configuration ships with it: endpoint, key reference, models, and the
+# persona suffix are deployment facts, so they live in the installing profile's patch and are edited
+# from Settings. With no endpoint configured the provider stays dormant and is offered in
+# Settings → Models → Add provider.
+- insert:
+    - id: dsh-llm-third-party-native
+      name: dsh-llm-third-party-native

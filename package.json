@@ -1,0 +1,51 @@
+{
+  "name": "dsh-llm-third-party-native",
+  "version": "0.2.1",
+  "description": "Any Anthropic-compatible Messages endpoint (OpenRouter, LiteLLM, self-hosted gateways) as a first-class provider, with thinking budgets, reasoning replay, and sticky routing handled in code.",
+  "license": "MIT",
+  "author": "bradleyFrancis",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradleyFrancis/dsh-llm-third-party-native.git"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "anthropic-messages",
+    "openrouter",
+    "litellm",
+    "searxng"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "search"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-rc.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings-models"
+      ]
+    }
+  }
+}
