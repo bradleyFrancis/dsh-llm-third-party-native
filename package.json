@@ -1,6 +1,6 @@
 {
   "name": "dsh-llm-third-party-native",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Any Anthropic-compatible Messages endpoint (OpenRouter, LiteLLM, self-hosted gateways) as a first-class provider, with thinking budgets, reasoning replay, and sticky routing handled in code.",
   "license": "MIT",
   "author": "bradleyFrancis",
